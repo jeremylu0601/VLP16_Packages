@@ -18,7 +18,7 @@
  
  [LOAM](https://github.com/laboshinl/loam_velodyne) 
  
- * Change some lines in loam_velodyne/src/lib/MultiScanRegistration.cpp
+ * Change some lines in **loam_velodyne/src/lib/MultiScanRegistration.cpp**
     1. change the lines 182-184 to:
         
             point.x = laserCloudIn[i].x;
