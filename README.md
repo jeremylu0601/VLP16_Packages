@@ -1,4 +1,4 @@
-# VLP16_SLAM
+# VLP16 SLAM
 
 ### Install the following packages
 
@@ -34,6 +34,44 @@
     3. change the lines 206 to:
     
             float ori = -std::atan2(point.y, point.x);
+            
+          
+### Usage
+
+Open a terminal
+
+    source /opt/ros/melodic/setup.bash
+    roslaunch velodyne_pointcloud VLP16_points.launch
+    
+Open the 2nd ternminal
+
+    source /opt/ros/melodic/setup.bash
+    source <path to LOAM workspace>/devel/setup.bash
+    roslaunch loam_velodyne loam_velodyne.launch 
+  
+Open the 3rd ternminal
+
+    source /opt/ros/melodic/setup.bash
+    rosbag record -o out /laser_cloud_surround
+    # map is published on /laser_cloud_surround
+
+After enough map data is saved,
+
+    source /opt/ros/melodic/setup.bash
+    rosrun pcl_ros bag_to_pcd <the .bag file we just saved> /laser_cloud_surround pcd
+    # pcd : the folder where the .pcd file are saved 
+            feel free to change
+
+Visualize the .pcd file
+
+    cd pcd
+    pcl_viewer xxxxxx.pcd 
+    # the last .pcd file is the most recent map from LOAM
+    # press 5 to change the color
+    
+# VLP16 Localization
+
+### Install the following packages
 
  [ndt_omp](https://github.com/koide3/ndt_omp)
  
@@ -42,7 +80,7 @@
  
 * Before catkin_make, please
     
-      source <path_to_ndt_omp_workspace>/devel/setup.dash
+      source <path to ndt_omp workspace>/devel/setup.dash
 
 
 
