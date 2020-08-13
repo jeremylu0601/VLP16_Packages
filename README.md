@@ -12,7 +12,6 @@
 * i.e. ignore the following command
     
       sudo ifconfig eth0 192.168.3.100
-    
       sudo route add 192.168.XX.YY eth0
       
  
@@ -22,16 +21,14 @@
     1. change the lines 182-184 to:
         
             point.x = laserCloudIn[i].x;
-
             point.y = laserCloudIn[i].y;
-        
             point.z = laserCloudIn[i].z;
        
-    2. change the lines 199 to:
+    2. change the line 199 to:
     
             float angle = std::atan(point.z / std::sqrt(point.y * point.y + point.x * point.x));
  
-    3. change the lines 206 to:
+    3. change the line 206 to:
     
             float ori = -std::atan2(point.y, point.x);
             
