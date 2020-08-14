@@ -107,6 +107,28 @@ Please change some lines in **hdl_localization.launch**
 
         <param name="ndt_neighbor_search_method" value="DIRECT1" />
         # try DIRECT1 serach method, which is a bit unstable but extremely fast
+        
+### Usage
+
+
+Open a terminal
+
+    source /opt/ros/melodic/setup.bash
+    source <path to hdl_localization workspace>/devel/setup.bash
+    roslaunch hdl_localization hdl_localization.launch
+    
+Open the 2nd ternminal
+
+    source /opt/ros/melodic/setup.bash
+    roslaunch velodyne_pointcloud VLP16_points.launch 
+  
+Open the 3rd ternminal
+
+    source /opt/ros/melodic/setup.bash
+    source <path to hdl_localization workspace>/devel/setup.bash
+    roscd hdl_localization/rviz/
+    rviz -d hdl_localization.rviz       
+
 
 ![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/demo_office.gif)
 
