@@ -4,7 +4,7 @@
 
     sudo apt-get install pcl-tools libomp-dev libpcl-dev
     
-[pcl_ros](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16)
+[pcl_ros](http://wiki.ros.org/pcl_ros)
 
 [Velodyne driver under ROS](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16) 
 
