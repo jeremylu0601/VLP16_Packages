@@ -51,6 +51,12 @@ Open the 3rd ternminal
     source /opt/ros/melodic/setup.bash
     rosbag record -o out /laser_cloud_surround
     # map is published on /laser_cloud_surround
+    
+![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/images/slam_demo.gif)
+
+The map data is published on **laser_cloud_surround** with white spheres
+
+![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/images/map_in_rviz.png)
 
 After enough map data is saved,
 
@@ -65,7 +71,9 @@ Visualize the .pcd file
     pcl_viewer xxxxxx.pcd 
     # the last .pcd file is the most recent map from LOAM
     # press 5 to change the color
-    
+
+![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/images/map_saved.png)
+
 # VLP16 Localization
 
 ### Install the following packages
@@ -79,6 +87,27 @@ Visualize the .pcd file
     
       source <path to ndt_omp workspace>/devel/setup.dash
 
+Please change some lines in **hdl_localization.launch**
 
+1. line 4
+
+       <arg name="nodelet_manager" default="velodyne_nodelet_manager_hdl" />
+
+2. line 14
+
+        <param name="globalmap_pcd" value="<the path to .pcd file regarded as map>" />
+        
+
+3. line 26 and 27 (when only lidar data is available)
+
+        <param name="use_imu" value="false" /> 
+        <param name="invert_imu" value="false" />
+        
+4. line 31 (optional)
+
+        <param name="ndt_neighbor_search_method" value="DIRECT1" />
+        # try DIRECT1 serach method, which is a bit unstable but extremely fast
+
+![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/demo_office.gif)
 
 
