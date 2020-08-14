@@ -117,3 +117,26 @@ Please change some lines in **hdl_localization.launch**
  * Yellow points are the aligned points
  
  * Ideally, the aligned points highly overlap on the map points
+ 
+ 
+# Other Packages Not Verified Yet
+
+### SLAM
+
+[A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM)
+
+[F-LOAM](https://github.com/wh200720041/floam)
+
+[LeGO-LOAM-SR](https://github.com/eperdices/LeGO-LOAM-SR)
+
+### Localization
+
+[dynamic_robot_localization](https://github.com/carlosmccosta/dynamic_robot_localization)
+
+[mcl_3dl](https://github.com/at-wat/mcl_3dl)
+
+[uwb-localization](https://github.com/lijx10/uwb-localization)
+
+
+
+
