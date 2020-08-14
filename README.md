@@ -119,7 +119,7 @@ Please change some lines in **hdl_localization.launch**
  * Ideally, the aligned points highly overlap on the map points
  
  
-# Other Packages Not Verified Yet
+# Other Packages Not Been Verified Yet
 
 ### SLAM
 
