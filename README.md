@@ -127,8 +127,9 @@ Open the 3rd ternminal
     source /opt/ros/melodic/setup.bash
     source <path to hdl_localization workspace>/devel/setup.bash
     roscd hdl_localization/rviz/
-    rviz -d hdl_localization.rviz       
-
+    rviz -d hdl_localization.rviz  
+    
+Move the lidar and see what happen
 
 ![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/demo_office.gif)
 
