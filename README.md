@@ -83,9 +83,12 @@ Visualize the .pcd file
  
  [hdl_localization](https://github.com/koide3/hdl_localization)
  
-* Before catkin_make, please
-    
+* Source ndt_omp before catkin_make, i.e.,
+       
+      source /opt/ros/melodic/setup.bash
       source <path to ndt_omp workspace>/devel/setup.dash
+      cd <path to hdl_localization workspace>/
+      catkin_make
 
 Please change some lines in **hdl_localization.launch**
 
