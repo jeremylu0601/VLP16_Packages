@@ -110,4 +110,8 @@ Please change some lines in **hdl_localization.launch**
 
 ![image](https://github.com/jeremylu0601/VLP16_SLAM/blob/master/demo_office.gif)
 
-
+![image](https://github.com/jeremylu0601/VLP16_Packages/blob/master/images/demo_in_office.gif)
+    
+    White points are the map from SLAM
+    Yellow points are the aligned points
+    Ideally, the aligned points highly overlap on the map points
