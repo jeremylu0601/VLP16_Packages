@@ -146,11 +146,11 @@ Move the lidar and see what happen
 
 ### SLAM
 
-[A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM)
+[A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) (ROS1)
 
-[F-LOAM](https://github.com/wh200720041/floam)
+[F-LOAM](https://github.com/wh200720041/floam) (ROS1)
 
-[LeGO-LOAM-SR](https://github.com/eperdices/LeGO-LOAM-SR)
+[LeGO-LOAM-SR](https://github.com/eperdices/LeGO-LOAM-SR) (ROS2)
 
 ### Localization
 
